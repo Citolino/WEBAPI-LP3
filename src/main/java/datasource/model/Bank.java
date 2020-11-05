@@ -29,7 +29,7 @@ public class Bank implements Serializable {
 	@Column(name = "id")
 	private Long Id;
 
-	@Column(name = "desc_bank")
+	@Column(name = "description")
 	private String desc_bank;
 
 }

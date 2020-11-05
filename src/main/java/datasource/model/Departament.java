@@ -29,7 +29,7 @@ public class Departament implements Serializable {
 	@Column(name = "id")
 	private Long Id;
 
-	@Column(name = "desc_departament")
+	@Column(name = "description")
 	private String desc_departament;
 
 }

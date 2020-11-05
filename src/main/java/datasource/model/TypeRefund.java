@@ -29,7 +29,7 @@ public class TypeRefund implements Serializable {
 	@Column(name = "id")
 	private Long Id;
 
-	@Column(name = "desc_type")
+	@Column(name = "description")
 	private String Desc_type;
 
 }

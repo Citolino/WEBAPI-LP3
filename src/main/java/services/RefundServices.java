@@ -60,7 +60,7 @@ public class RefundServices {
 			throw new RefundNotFoundException("Refund not found by ID:" + id);
 		} else {
 			refund = optionalRefund.get();
-		   
+		   refund.setStatus(status);
 			
 			refundRepository.saveAndFlush(refund);
 		}
