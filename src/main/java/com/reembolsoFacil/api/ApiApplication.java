@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import com.reembolsoFacil.api.config.BasicConfiguration;
-import com.reembolsoFacil.api.config.WebConfig;
+
 
 import controller.BankController;
 import controller.DepartamentApproverController;
