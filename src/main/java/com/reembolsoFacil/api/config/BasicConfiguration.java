@@ -18,14 +18,10 @@ public class BasicConfiguration extends WebSecurityConfigurerAdapter {
 	@Override
     protected void configure(HttpSecurity security) throws Exception
     {
-		security.authorizeRequests()
-	    .anyRequest().authenticated()
-	    .and().cors()
-	    .and().csrf().disable();
+		  security.csrf().disable();
+		     security.httpBasic().disable();
+		     security.cors();
 		
-		
-		
-
     }
 	
 }
