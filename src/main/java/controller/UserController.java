@@ -47,7 +47,6 @@ public class UserController {
 		return new ResponseEntity<>( userService.findAllRefunds(),HttpStatus.OK);
 		
 	}
-	@CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
 	@GetMapping(path = "/Authenticate/{Login}/{Senha}")
 	@ResponseBody
 	public ResponseEntity<?> authenticate( @PathVariable(name = "Login", required = true) String Login, @PathVariable(name = "Senha", required = true) String Senha) throws UserNotFoundException {

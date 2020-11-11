@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import com.reembolsoFacil.api.config.BasicConfiguration;
+import com.reembolsoFacil.api.config.CorsFilter;
 
 import controller.BankController;
 import controller.DepartamentApproverController;
@@ -28,7 +29,7 @@ import services.UserServices;
      {"repository",
      })
 @EntityScan("datasource.model")
-@ComponentScan(basePackageClasses = {TypeRefundController.class, DepartamentApproverController.class, BankController.class, DepartamentController.class, RefundController.class , UserController.class ,DepartamentApproverService.class, RefundServices.class ,BankService.class, DepartamentService.class,TypeRefundService.class, BasicConfiguration.class, UserServices.class})
+@ComponentScan(basePackageClasses = {TypeRefundController.class, DepartamentApproverController.class, BankController.class, DepartamentController.class, RefundController.class , UserController.class ,DepartamentApproverService.class, RefundServices.class ,BankService.class, DepartamentService.class,TypeRefundService.class, BasicConfiguration.class, UserServices.class,CorsFilter.class})
 
 public class ApiApplication {
 
