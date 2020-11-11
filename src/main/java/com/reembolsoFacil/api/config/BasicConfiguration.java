@@ -15,8 +15,8 @@ public class BasicConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity security) throws Exception
     {
 	  security.csrf().disable();
-     security.httpBasic().disable();
+      security.httpBasic().disable();
+      security.cors();
     }
-	
 	
 }
